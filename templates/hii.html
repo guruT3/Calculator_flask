@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f0f0f;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 40px;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #fff;
+            background: #1f1f1f;
+            padding: 15px 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px #00f0ff, inset 0 0 5px #00f0ff;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: 2px solid #00f0ff;
+        }
+
+        a:hover {
+            transform: scale(1.07);
+            box-shadow: 0 0 25px #00f0ff, inset 0 0 10px #00f0ff;
+            background-color: #0d0d0d;
+        }
+    </style>
+</head>
+<body>
+    <h1>💡 Calculator Operations</h1>
+    <ul>
+        <li><a href="{{ url_for('add') }}">➕ Addition</a></li>
+        <li><a href="{{ url_for('subtract') }}">➖ Subtraction</a></li>
+        <li><a href="{{ url_for('multiply') }}">✖️ Multiplication</a></li>
+        <li><a href="{{ url_for('divide') }}">➗ Division</a></li>
+    </ul>
+</body>
+</html>

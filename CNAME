@@ -1,1 +1,6 @@
 calculatort3.in
+
+Host: www
+Type: CNAME
+Value: gurut3.github.io
+TTL: Automatic or 30 mins
